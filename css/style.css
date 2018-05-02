@@ -1,0 +1,91 @@
+p {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  height: 56px;
+  position: relative;
+}
+
+.navbar {
+  z-index: 2;
+  opacity: 0.9;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.hov-line {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+.hov-line:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+.hov-line:hover:after {
+    width: 100%;
+    background: black;
+}
+
+.hello, .nav {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.hello {
+  min-height: 250px;
+  background-position: center;
+  background-size: cover;
+  background-image: url('http://dariocosta.net/images/3header-background.jpg');
+}
+
+.main {
+  font-family: 'Muli', sans-serif;
+  font-size: 1.1rem;
+}
+
+.tuman {
+  background-color: rgba(200,255,255,0.8)
+}
+
+#frontend-bg, #backend-bg {
+  width: 191px;
+  height: 200px;
+  background-image: url('https://alexandreesl.files.wordpress.com/2016/03/backand_frontand.png');
+  background-size: cover;
+  border-radius: 20px;
+}
+
+#frontend-bg {
+  background-position: right;
+}
+
+.back-relax {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://i.ytimg.com/vi/OBnRJzh9D68/maxresdefault.jpg");
+}
+
+.contact {
+  width: 300px;
+}
+
+#scrollTop {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  top: 80vh;
+  right: 0;
+  border-radius: 50px;
+  opacity: 0.7;
+  font-size: 2em;
+}
